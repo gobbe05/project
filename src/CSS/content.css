@@ -104,7 +104,7 @@
 
     z-index: 0;
 
-    left: -30%;
+    left: -27%;
     top: 20%;
     width: 100%;
 }
@@ -140,7 +140,7 @@
     text-align: center;
 
     width: 35%;
-    left: 35%;
+    left: 22.5%;
 
     position: relative;
 
@@ -270,33 +270,19 @@
     }
 }
 
-@media screen and (min-height: 1366px) {
-    .name {
-        font-size: 72px;
-    }
-    .date {
-        font-size: 62px;
-
-    }
-
-    .personal-story p {
-        margin-top: 75%;
-        font-size: 24px;
-    }
-
+@media screen and (max-width: 1281px) {
     .personal-information {
-        left: -25%;
-        top: 15%;
-    }
-
-    .move-content-container .personal-story p {
-        left: 47.5%;
+        left: -35%;
     }
 }
 
-@media screen and (min-height: 1024px) {
+@media screen and (max-width: 1600px) {
     .personal-information {
-        left: -20%;
-        top: 15%;
+        left: -32.5%;
+    }
+
+    .personal-information h3 {
+        left: 32.5%;
     }
 }
+
