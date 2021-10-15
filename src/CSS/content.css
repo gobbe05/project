@@ -283,6 +283,10 @@
     }
 }
 
+@media screen and (min-width: 1366px) {
+    
+}
+
 @media screen and (min-width: 1600px) {
     .personal-information {
         left: -32.5%;

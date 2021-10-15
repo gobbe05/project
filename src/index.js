@@ -5,6 +5,7 @@ import './CSS/index.css';
 import Home from './home';
 import Algs from './Algorithms and data structures/algs'
 import Login from './Login/login';
+import Portfolio from './Portfolio/portfolio'
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
@@ -13,6 +14,7 @@ ReactDOM.render(
       <Switch>
         <Route path="/home" exact component={() => <Home />} />
         <Route path="/login" exact component={() => <Login />} />
+        <Route path="/portfolio" exact component={() => <Portfolio />} />
         <Route path="/algs" exact component={() => <Algs />} />
       </Switch>
     </Router>

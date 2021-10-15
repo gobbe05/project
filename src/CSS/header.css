@@ -8,6 +8,7 @@
     flex-direction: row;
 
     background: #0E0B16;
+    color: #A239CA;
     z-index: 3;
 }
 
@@ -23,6 +24,7 @@
     list-style: none;
     text-align: center;   
 }
+
 
 .header-navigation ul li {
     display: inline;

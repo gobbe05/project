@@ -27,9 +27,6 @@ function Home() {
             <div class="start-content">
             <Content />
             </div>
-            <div class="todo-list">
-            <Todolist />
-            </div>
         </div>
         </>
     )
