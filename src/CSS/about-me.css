@@ -11,29 +11,34 @@
     margin-top: 12.5%;
 }
 
-.about-image {
-    width: 50%;
+.knowledge-container {
+    width: 100%;
+    display: flex;
 }
 
-.about-image img {
-    box-shadow: 0px 0px 15px #8f32b4;
-    width: 50%;
-    margin-left: 25%;
-    transition: 0.2s ease-in-out; 
-}
-
-.about-image img:hover {
-    transform: scale(1.03);
-    box-shadow: 0px 0px 30px #9d36c5;
-}
-
-.about-text {
+.knowledge-container div {
     text-align: center;
-    font-size: 36px;
-    width: 50%;
+    width: 33%;
 }
 
-.about-text h1 {
-    width: 50%;
-    margin-left: 25%;
+.knowledge-container div img {
+    height: 50%;
+}
+
+@media screen and (max-width: 415px) {
+    .about-me-content {
+        height: auto !important;
+    }
+    
+    .knowledge-container {
+        display: block !important; 
+    }
+
+    .knowledge-container div {
+        text-align: center !important;
+        background-color: #8f32b4;
+        color: #EEEEEE;
+        width: 100vw !important;
+        height: 50vh !important;
+    }
 }

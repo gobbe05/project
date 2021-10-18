@@ -15,6 +15,8 @@
 .header-navigation {
     width: 94%;
     line-height: 10vh;
+
+
 }
 
 .header-navigation ul {
@@ -34,7 +36,7 @@
 
 .header-navigation ul li a {
     font-size: 32px;
-    color: #A239CA;
+    color: #a139ca;
     text-decoration: none;
 
     transition: 0.3s;
@@ -43,4 +45,21 @@
 .header-navigation ul li a:hover {
     color: #EEEEEE;
     font-size: 36px;
+}
+
+.logged-in-user h3 {
+    position: absolute;
+
+    right: 5%;
+}
+
+@media screen and (max-width: 415px) {
+
+    .header-navigation ul{
+        display: none !important;
+    }
+
+    .logged-in-user {
+        display: none !important;
+    } 
 }

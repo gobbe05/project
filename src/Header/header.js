@@ -1,6 +1,7 @@
 import React from 'react'
-import './CSS/header.css'
-import useActiveUser from './Custom Hooks/useActiveUser'
+import '../CSS/header.css'
+import useActiveUser from '../Custom Hooks/useActiveUser'
+import HamburgerMenu from './hamburger-menu'
 
 /* The header function is just JSX code of the Header component. It handles the header
 and its items.
@@ -19,6 +20,7 @@ function Header() {
     const [activeUser, setActiveUser] = useActiveUser('activeUser', 0)
     const [users, setuser] = useActiveUser('test', '')
     const [firstLoggedIn, setFirstLoggedIn] = useActiveUser('firstLogged', true)
+    const [activateHamburger, setActivateHamburger] = React.useState(false)
     
         React.useEffect(() => {
             if(firstLoggedIn) {
@@ -35,11 +37,14 @@ function Header() {
                     <li><a href="./portfolio">Portfolio</a></li>
                     <li><a href="./login">Login</a></li>
                 </ul>
+                <HamburgerMenu />
             </div>
 
-            <div className={"Logged In User"}>
+            <div className={"logged-in-user"}>
                 <h3>{users[activeUser].username}</h3>
             </div>
+
+            
         </div>
     )
 }

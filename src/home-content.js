@@ -1,13 +1,55 @@
 import React from 'react'
 import './CSS/content.css'
 import {Link} from 'react-scroll'
+import useSwipes from './Custom Hooks/useSwipes'
 
 function Content() {
 
     const [moveContainer, setMoveContainer] = React.useState(false)
+    const [swipeDirection, setSwipeDirection] = React.useState("")
+    const [correctSwipeDirection, setCorrectSwipeDirection] = React.useState("left")
 
+    React.useEffect(() => {
+        setCorrectSwipeDirection("left")
+
+        let touchstartX = 0
+        let touchendX = 0
+    
+        const slider = document.getElementById('slider')
+    
+    function handleGesture() {
+      if (touchendX < touchstartX) setSwipeDirection("right")
+      if (touchendX > touchstartX) setSwipeDirection("left")
+    }
+    
+    slider.addEventListener('touchstart', e => {
+      touchstartX = e.changedTouches[0].screenX
+    })
+    
+    slider.addEventListener('touchend', e => {
+      touchendX = e.changedTouches[0].screenX
+      handleGesture()
+    })
+    }, [])
+
+    React.useEffect(() => {
+        if(swipeDirection == correctSwipeDirection) {
+            if(correctSwipeDirection == "right") {
+                setMoveContainer(false)
+                setCorrectSwipeDirection("left")
+            }
+            else {
+                setMoveContainer(true)
+                setCorrectSwipeDirection("right")
+            }
+
+        }
+    }, [swipeDirection])
+
+
+    
     return (
-        <div className={(moveContainer ? "move-content-container" : "") + " content-container"}>
+        <div className={(moveContainer ? "move-content-container" : "") + " content-container"} id="slider">
 
             <div className={"arrow-left" + " arrow"}>
                 <a onClick={() => setMoveContainer(false)} href="#">{"<"}</a>
@@ -21,6 +63,7 @@ function Content() {
                 </div>
             </div>
 
+            <div className={"personal-relative"}>
             <div className={"personal-information"}>
                 <div className={"name"}>
                     <h1 className={"name-h1"}>Gabriel Raskov</h1>
@@ -29,6 +72,7 @@ function Content() {
                 <div className={"date"}>
                     <h3 className={"name-h3"}>05.01.28</h3>
                 </div>
+            </div>
             </div>
 
             <div className={"arrow-right" + " arrow"}>

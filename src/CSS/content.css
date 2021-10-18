@@ -52,7 +52,7 @@
 }
 
 .move-content-container .personal-story p {
-    left: 27%;
+    left: 0;
 }
 
 .move-content-container .story-1{
@@ -78,7 +78,10 @@
 
     display: flex;
 
-    top: 2.5%;
+    margin-left: 15%;
+    margin-right: 15%;
+
+    top: 10%;
 }
 
 .personal-story p {
@@ -87,7 +90,7 @@
     font-size: 24px;
     width: 33%;
 
-    left: -120%;
+    left: -200%;
     margin-top: 15%;
     transition: right 0.5s;
     transition: left 1s;
@@ -100,20 +103,27 @@
 }
 
 .personal-information {
-    position: relative;
+    position: absolute;
+    overflow: hidden;
 
     z-index: 0;
 
-    left: -27%;
-    top: 20%;
+    left: 0;
+
+    top: 35%;
+    width: 100vw;
+}
+
+.personal-information div{
+    text-align: center;
+
     width: 100%;
 }
 
 
 .personal-information h1 {
-    box-shadow: 0 7px 0px #A239CA;
-    width: 450px;
-    left: 5%;
+
+    left: 0;
 
     text-align: center;
 
@@ -123,24 +133,19 @@
 
     animation: pulse 2.5s;
 
-    transition: 0.5s;
+    transition: 2.5s;
 }
 
 .personal-information h1:hover {
     color: #EEEEEE;
-
-    box-shadow: 0 10px 0px #EEEEEE;
 }
 
 .personal-information h3 {
-    box-shadow: 0 7px 0px #A239CA;
-
     color: #A239CA;
 
+    left: 0;
+    
     text-align: center;
-
-    width: 35%;
-    left: 21%;
 
     position: relative;
 
@@ -151,8 +156,6 @@
 
 .personal-information h3:hover {
     color: #EEEEEE;
-
-    box-shadow: 0 10px 0px #EEEEEE;
 }
 
 .arrow {
@@ -253,14 +256,12 @@
     }
 
     50% {
-        transform: scale(1.1);
-        color: #EEEEEE;
-        box-shadow: 0 10px 0px #EEEEEE;
+        transform: scale(1.2);
+        color: #b146db;
     }
 
     55% {
         transform: scale(1);
-        box-shadow: 0 7px 0px #EEEEEE;
     }
 
 
@@ -270,55 +271,21 @@
     }
 }
 
-@media screen and (min-width: 1280px) {
-    .move-content-container .personal-story p {
-        left: 31%;
-    } 
-    .personal-information {
-        left: -31.5%;
+
+@media screen and (max-width: 415px) {
+    .name h1 {
+        font-size: 48px;
     }
 
-    .personal-information h3 {
-        left: 36%;
-    }
-}
-
-@media screen and (min-width: 1379px) {
-    .move-content-container .personal-story p {
-        left: 27%;
-    }
-}
-
-@media screen and (min-width: 1600px) {
-    .personal-information {
-        left: -32.5%;
+    .date h3 {
+        font-size: 28px;
     }
 
-    .personal-information h3 {
-        left: 32.5%;
+    .arrow {
+        display: none;
     }
 
-    .move-content-container .personal-story p {
-        left: 25%;
-    }
-}
-
-@media screen and (min-width: 1920px) {
-    .move-content-container .personal-story p {
-        left: 28%;
-    }
-
-    .personal-information h3 {
-        left: 22%;
-    }
-
-    .personal-information {
-        position: relative;
-    
-        z-index: 0;
-    
-        left: -27%;
-        top: 20%;
-        width: 100%;
+    .arrow-down {
+        display: block;
     }
 }
