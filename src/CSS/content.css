@@ -283,8 +283,10 @@
     }
 }
 
-@media screen and (min-width: 1366px) {
-    
+@media screen and (min-width: 1379px) {
+    .move-content-container .personal-story p {
+        left: 27%;
+    }
 }
 
 @media screen and (min-width: 1600px) {

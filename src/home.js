@@ -2,6 +2,7 @@ import React from 'react'
 import './CSS/home.css'
 import Header from './header'
 import Content from './home-content'
+import Aboutme from './about-me'
 import Login from './Forms/login'
 import Todolist from './ToDoList/list/todo-list'
 
@@ -24,8 +25,11 @@ function Home() {
         <>
         <Header />
         <div id="page-content">
-            <div class="start-content">
+            <div className="start-content">
             <Content />
+            </div>
+            <div className={"about-me-content"}>
+            <Aboutme />
             </div>
         </div>
         </>
