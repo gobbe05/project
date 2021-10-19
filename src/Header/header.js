@@ -42,7 +42,6 @@ function Header() {
                 </div>
     
                 <div className={"logged-in-user"}>
-                    <h3></h3>
                 </div>
     
                 
