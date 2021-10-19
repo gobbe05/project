@@ -89,7 +89,7 @@ export default function Todolist(props) {
                             }
                             else {
                                 return (
-                                    <><li key={value}>{value} {index}</li><button onClick={() => removeItem(index)}></button></>
+                                    <><li key={value}>{value} {index}<button className={"button-todo"} onClick={() => removeItem(index)}></button></li></>
                                 )
                             }
                         })

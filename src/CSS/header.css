@@ -8,12 +8,12 @@
     flex-direction: row;
 
     background: #0E0B16;
-    color: #A239CA;
+    color: #ADD8E6;
     z-index: 3;
 }
 
 .header-navigation {
-    width: 94%;
+    width: 98%;
     line-height: 10vh;
 
 
@@ -21,7 +21,7 @@
 
 .header-navigation ul {
     width: 100%;
-    color: #A239CA;
+    color: #ADD8E6;
     font-family: 'Gemunu Libre', sans-serif;
     list-style: none;
     text-align: center;   
@@ -36,7 +36,7 @@
 
 .header-navigation ul li a {
     font-size: 32px;
-    color: #a139ca;
+    color: #ADD8E6;
     text-decoration: none;
 
     transition: 0.3s;

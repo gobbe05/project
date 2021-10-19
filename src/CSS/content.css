@@ -10,13 +10,13 @@
     height: 87.5vh;
     font-size: 36px;
     font-family: 'Gemunu Libre', sans-serif;
-    color: #A239CA;
+    color: #ADD8E6;
 
     overflow: hidden;
 }
 
 .content-container p {
-    color: #A239CA;
+    color: #ADD8E6;
     transition: color 5s;
 }
 
@@ -129,7 +129,7 @@
 
     position: relative;
 
-    color: #A239CA;
+    color: #ADD8E6;
 
     animation: pulse 2.5s;
 
@@ -141,7 +141,7 @@
 }
 
 .personal-information h3 {
-    color: #A239CA;
+    color: #ADD8E6;
 
     left: 0;
     
@@ -160,7 +160,7 @@
 
 .arrow {
     font-size: 64px;
-
+    z-index: 100;
     top: 40%;
 }
 
@@ -169,26 +169,27 @@
     right: 5%;
     left: -5%;
 
+    z-index: 10;
 
     transition: left 0.5s;
 }
 
 .arrow-left a {
-    color: #A239CA;
+    color: #ADD8E6;
     text-decoration: none;
 }
 
 .arrow-left {
     position: relative;
     left: -15%;
-    z-index: 1;
+    z-index: 100;
     transition: left 0.5s;
 }
 
 .arrow a{
-    color: #A239CA;
+    color: #ADD8E6;
     text-decoration: none;
-
+    z-index: 100;
     transition: color 0.5s;    
 }
 
@@ -252,12 +253,12 @@
 
 @keyframes pulse {
     0% {
-        color: #A239CA;
+        color: #ADD8E6;
     }
 
     50% {
         transform: scale(1.2);
-        color: #b146db;
+        color: white;
     }
 
     55% {
@@ -267,7 +268,7 @@
 
 
     100% {
-        color: #A239CA
+        color: #ADD8E6
     }
 }
 

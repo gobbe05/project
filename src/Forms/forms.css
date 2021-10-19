@@ -10,7 +10,6 @@ body {
 
 .login-container {
   height: 80vh;
-  opacity: 0.8;
 }
 
 .login-content {
@@ -24,9 +23,9 @@ body {
 
   padding: 10%;
   border-radius: 12px;
-  box-shadow: 0px 0px 15px #A239CA;
+  box-shadow: 0px 0px 15px #ADD8E6;
 
-  background-color: #A239CA;
+  background-color: #ADD8E6;
   margin-top: 0;
   height: 250px;
   width: 50%;
@@ -91,7 +90,7 @@ form button {
 
 form button:hover {
   transform: scale(1.02);
-  background: #8f32b4;
+  background: #ADD8E6;
   color: #EEEEEE;
   box-shadow: 0px 0px 15px #EEEEEE;
 }
@@ -105,11 +104,11 @@ form legend {
 }
 
 .sign-up-confirmed {
-  background: #A239CA;
-  color: #A239CA;
+  background: #ADD8E6;
+  color: #ADD8E6;
   transition: background 0.5s;
 }
 
 .sign-up-confirmed:hover {
-  background: #A239CA;
+  background: #ADD8E6;
 }

@@ -20,7 +20,7 @@
 
     border-radius: 3px;
 
-    background: #a139ca;
+    background: #ADD8E6;
 }
 
 .header-navigation {
@@ -36,13 +36,14 @@
 
     position: fixed;
 
-    background-color: #8f32b4;
+    background-color: #ADD8E6;
 }
 
 .side-menu ul{
     position: relative;
+
     top: 15%;
-    right: 12.5%;
+    
     display: block !important;
 }
 
@@ -69,5 +70,9 @@
 @media screen and (max-width: 415px) {
     #hamburger {
         display: block;
+    }
+
+    .side-menu ul {
+        right: 12.5%;
     }
 }

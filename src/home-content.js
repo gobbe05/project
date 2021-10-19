@@ -84,7 +84,7 @@ function Content() {
             </div>
 
             <div className="arrow-down arrow">
-                <Link to="about-me-container" offset={-100} smooth={true} duration={2000}><a href="">↓</a></Link>
+                <Link to="about-me-container" offset={-100} smooth={true} duration={1000}><a href="">↓</a></Link>
             </div>
         </div>
     )
