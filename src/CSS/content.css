@@ -289,4 +289,12 @@
     .arrow-down {
         display: block;
     }
+
+    .personal-story p {
+        margin-top: 0 !important;
+    }
+
+    .story-text {
+        top: 0 !important;
+    }
 }

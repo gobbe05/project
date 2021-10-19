@@ -7,6 +7,7 @@ import Login from './Forms/login'
 import Todolist from './ToDoList/list/todo-list'
 
 import useLoggedIn from './Custom Hooks/useLoggedIn'
+import useActiveUser from './Custom Hooks/useActiveUser'
 
 
 class User {
@@ -18,8 +19,6 @@ class User {
 }
 
 function Home() {
-
-    const [usernameList, setUsernameList] = useLoggedIn('test', [new User('guest', '', ['test', 'test'])])
 
     return (
         <>
