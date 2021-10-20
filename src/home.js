@@ -5,6 +5,7 @@ import Content from './home-content'
 import Aboutme from './about-me'
 import Login from './Forms/login'
 import Todolist from './ToDoList/list/todo-list'
+import Footer from './Footer/footer'
 
 import useLoggedIn from './Custom Hooks/useLoggedIn'
 
@@ -20,7 +21,7 @@ class User {
 function Home() {
 
     const [usernameList, setUsernameList] = useLoggedIn('test', [new User('guest', '', ['test', 'test'])])
-
+    
     return (
         <>
         <Header />
@@ -32,6 +33,7 @@ function Home() {
             <Aboutme />
             </div>
         </div>
+        <Footer />
         </>
     )
     

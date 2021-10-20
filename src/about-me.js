@@ -8,7 +8,7 @@ export default function Aboutme () {
     return (
         <>
         <div id={"about-me-container"}>
-            <div className={"knowledge-container"}>
+            
                 <div className={"item"}>
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png"></img>
                     <h1>React</h1>
@@ -24,7 +24,6 @@ export default function Aboutme () {
                     <h1>Python</h1>
                 </div>
             </div>
-        </div>
         </>
     )
 }
