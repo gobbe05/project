@@ -133,7 +133,7 @@
 
     animation: pulse 2.5s;
 
-    transition: 2.5s;
+    transition: 2s;
 }
 
 .personal-information h1:hover {
@@ -288,5 +288,13 @@
 
     .arrow-down {
         display: block;
+    }
+
+    .personal-story p {
+        margin-top: 0 !important;
+    }
+
+    .story-text {
+        top: 0 !important;
     }
 }

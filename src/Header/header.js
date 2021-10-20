@@ -25,28 +25,50 @@ function Header() {
         React.useEffect(() => {
             if(firstLoggedIn) {
                 setFirstLoggedIn(false)
-                localStorage.setItem('test', JSON.stringify([new User('guest', '', ['test', 'test'])]))
+                setuser([new User('guest', '', ['test', 'test'])])
         }
-        }, [])
+        })
 
-    return (
-        <div id="header-container">
-            <div className={"header-navigation"}>
-                <ul>
-                    <li><a href="./home">Home</a></li>
-                    <li><a href="./portfolio">Portfolio</a></li>
-                    <li><a href="./login">Login</a></li>
-                </ul>
-                <HamburgerMenu />
+    if(firstLoggedIn) {
+        return (
+            <div id="header-container">
+                <div className={"header-navigation"}>
+                    <ul>
+                        <li><a href="./home">Home</a></li>
+                        <li><a href="./portfolio">Portfolio</a></li>
+                        <li><a href="./login">Login</a></li>
+                    </ul>
+                    <HamburgerMenu />
+                </div>
+    
+                <div className={"logged-in-user"}>
+                </div>
+    
+                
             </div>
+        )
 
-            <div className={"logged-in-user"}>
-                <h3>{users[activeUser].username}</h3>
+    }
+    else {
+        return (
+            <div id="header-container">
+                <div className={"header-navigation"}>
+                    <ul>
+                        <li><a href="./home">Home</a></li>
+                        <li><a href="./portfolio">Portfolio</a></li>
+                        <li><a href="./login">Login</a></li>
+                    </ul>
+                    <HamburgerMenu />
+                </div>
+    
+                <div className={"logged-in-user"}>
+                    {firstLoggedIn == false ? <h3>{users[activeUser].username}</h3> : null}
+                </div>
+    
+                
             </div>
-
-            
-        </div>
-    )
+        )
+    }
 }
 
 export default Header
