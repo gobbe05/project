@@ -5,6 +5,7 @@ import Content from './home-content'
 import Aboutme from './about-me'
 import Login from './Forms/login'
 import Todolist from './ToDoList/list/todo-list'
+import Footer from './Footer/footer'
 
 import useLoggedIn from './Custom Hooks/useLoggedIn'
 import useActiveUser from './Custom Hooks/useActiveUser'
@@ -19,13 +20,10 @@ class User {
 }
 
 function Home() {
-
-<<<<<<< HEAD
     const [usernameList, setUsernameList] = useLoggedIn('test', [new User('guest', '', ['test', 'test'])])
     
-=======
->>>>>>> 39c61a8a86de09d089f856131ed6ba16563147fb
-    return (
+
+return (
         <>
         <Header />
         <div id="page-content">
@@ -35,6 +33,7 @@ function Home() {
             <div className={"about-me-content"}>
             <Aboutme />
             </div>
+            <Footer />
         </div>
         </>
     )

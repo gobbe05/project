@@ -5,6 +5,7 @@ import './CSS/index.css';
 import Home from './home';
 import Login from './Login/login';
 import Portfolio from './Portfolio/portfolio'
+import Contact from './Contact/contact'
 import reportWebVitals from './reportWebVitals';
 import useActiveUser from './Custom Hooks/useActiveUser';
 
@@ -15,6 +16,7 @@ ReactDOM.render(
         <Route path="/home" exact component={() => <Home />} />
         <Route path="/login" exact component={() => <Login />} />
         <Route path="/portfolio" exact component={() => <Portfolio />} />
+        <Route path="/contact" exact component={() => <Contact />} />
       </Switch>
     </Router>
   </React.StrictMode>,
